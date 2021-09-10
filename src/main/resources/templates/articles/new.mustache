@@ -1,0 +1,40 @@
+{{>layouts/header}}
+<header>
+    <div class="bg-dark text-white p-5">
+        <h1>교육일지 레이아웃 수정</h1>
+    </div>
+</header>
+<section>
+    <div style="height: auto; width: 100%; border:1px solid gold;">
+        데이터 베이스가 있을 자리
+    </div>
+
+</section>
+
+
+<form class = "container" action="/articles/create"  method="post">
+    <input type="date" id = "ddate" name="date">
+    <div class = "mb-3">
+        <label class="form-label"> 제목 </label>
+        <input type="text" class="form-control" name="title">
+    </div>
+    <div class = "mb-3">
+        <label class="form-label"> 수행과제 </label>
+        <textarea class="form-control"  rows="10" name="assign"></textarea>
+    </div>
+    <div class = "mb-3">
+        <label class="form-label"> 수행과정 </label>
+        <textarea class="form-control"  rows="10" name="perform"></textarea>
+    </div>
+    <div class = "mb-3">
+        <label class="form-label"> 실패 사례 </label>
+        <textarea class="form-control"  rows="10" name="fail"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary"> 제출</button>
+    <button type="submit" class="btn btn-primary"> 저장</button>
+
+
+
+</form>
+
+{{>layouts/footer}}
