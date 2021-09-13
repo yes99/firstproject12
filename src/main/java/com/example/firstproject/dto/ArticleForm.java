@@ -16,6 +16,26 @@ public class ArticleForm {
         this.fail = fail;
     }
 
+    public String getDate() {
+        return date;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAssign() {
+        return assign;
+    }
+
+    public String getPerform() {
+        return perform;
+    }
+
+    public String getFail() {
+        return fail;
+    }
+
     @Override
     public String toString() {
         return "ArticleForm{" +
@@ -26,4 +46,6 @@ public class ArticleForm {
                 ", fail='" + fail + '\'' +
                 '}';
     }
+
+
 }
